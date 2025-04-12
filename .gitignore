@@ -175,3 +175,5 @@ cython_debug/
 
 duplicatedrowsdonordata.csv
 .DS_Store
+
+/dashboard
