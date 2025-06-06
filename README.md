@@ -1,99 +1,57 @@
-# BRDC_Cow
-Mooooo
+# GiveSmart: Predictive Donor Analytics - 2025 Big Red Data Challenge
 
+Team: Minh Le, Uyen Nguyen, Viet Nguyen, Lewis Nguyen
 
+## 🔍 Overview
+This project uses behavioral analytics and statistical modeling to help Sam’s Fans, a nonprofit supporting music therapy for seriously ill children, identify high-value donor segments and optimize fund allocation. By analyzing over 8,000 donation records, we surfaced key patterns that inform personalized outreach and strategic growth.
 
-## Events provided by Sam's Fan
+## 🗂 Project & Structure
+```
+.
+├── data/                                       # Cleaned and raw data files
+├── presentations/                              # Project slides and graphics
+├── RFManalysis.ipynb                           # K-means clustering on RFM scores
+├── Time_Series_Survival_Analysis.ipynb         # Kaplan-Meier, Weibull AFT, STL, SARIMA models
+├── Unmet_Demand_Analysis.ipynb                 # OLS regression to identify funding gaps
+├── README.md                                   # Project summary and documentation
+└── .gitignore
+```
 
-- (Annual) THREAD of Hope
+## ⚙️ Methodology
+1. Donor Segmentation:
 
+- Applied RFM analysis (Recency, Frequency, Monetary)
 
-## Goal for analysis
+- Used K-means clustering to classify donors into 5 behavioral segments
 
-1. Improved Fundraising Strategies
+2. Time-Series & Survival Analysis
 
-- Goal: Identify giving trends, optimal donation times, and preferred donation methods.
+- Modeled retention using Kaplan-Meier and Weibull AFT
 
-- Why: Better understanding of donor behavior can help tailor solicitation approaches for higher impact.
+- Detected seasonal giving patterns via STL decomposition
 
-2. Enhanced Donor Retention & Engagement
+- Forecasted donation trends using SARIMA
 
-- Goal: Analyze donor giving frequency, donation amounts, and engagement history.
+3. Regression Modeling
 
-- Why: Understanding these patterns can lead to strategies that increase long-term donor loyalty.
+- Ran an OLS model to identify unmet demand in therapy programs
 
-3. Better Decision-Making
+- Pinpointed 5+ key areas to strengthen support (e.g., Art/Music Therapy, Group Sessions)
 
-- Use donor data to prioritize high-value donors and identify new prospect segments.
+## 📈 Key Findings
+- Helped Sams Fans identifiying “Star Donors” and "Commited Contributors" clusters for future retention strategies
 
-- More targeted decision-making leads to more effective fundraising efforts.
+- Donation engagement spikes in Q4; risk of churn if no contact within 9–10 months
 
-4. Better Resource Allocation
-- Goal: Analyze both hospital and donor data to determine where resources can be most effectively deployed.
+- Regression insights guided data-backed investment in underserved program areas
 
-- Why: Ensuring that funds and efforts are allocated to programs or areas that yield the highest impact.
+## 📚 References
+- [Sam’s Fans – Nonprofit Partner](https://www.samsfans.org/)
 
-## Some Ideas
+- [Denison Data Analytics Program](https://www.linkedin.com/company/denison-data-analytics-program/)
 
-### 1. Donor Segmentation (RFM Analysis)
-
-- Resource: https://npoinfo.com/donor-segmentation/#:~:text=For%20example%2C%20recency%2C%20frequency%2C%20and,based%20on%20their%20giving%20habits)
-
-- New vs. Returning Donors
-
-- Small, Mid, Major Donors (e.g. <$100, $100-$1000, >$1000) -> which segment contributes the most & target segments with growth potential
-
-- Geographic Segmentation 
-
-- Donor Profiles: build profile for key segments
-
-+ "Loyalists" - donors with high frequency. How much do they contribute over time? What campaigns engage them? Show that retaining these loyal donors yields high cumulative value
-
-+ "Champions" - a few major donors contributing large amounts. Cultivate more mid-level donors into major donors
-
-+ "Occasional Supports" - Donors who give infrequently or only to specific campaigns/events -> patterns and considered targeted reminders/event-specific follow-ups
-
-- Could do a regression model to forecast future donation amounts based on trends and donor growth
-
-### 2. Fundraising Campaign Effectiveness
-
-- Use `Campaign` to compare fundraising outcomes
-
-+ Total funds raised per campaign, number of donors, and average gifts
-
-+ Timeline of Campaigns
-
-+ ROI of Campaign Types
-
-- `Appeal` Channel Effectiveness
-
-### 3. Donor Retention & Growth Modeling
-
-- Year-over-Year Donor Retention: percentage of donors return each year
-
-- Lifetime Value & Predictive Model: Model to predict donor lifetime value or likelihood to donate again (logistics/decision tree sounds reasonable here)
-
-- Growth Trends: Just simple data analysis
-
-- Churn Analysis: Identify characteristics of donors who did not return
-
-### 4. Therapy Program Reach & Impact Analysis
-
-- Expansion opportunities -> introducing new programs to hospitals that currently not have it, if resources allowed
-
-- Patients served & session volumes -> scale of impact
-
-- Therapy Modality Insights -> which activities are most commonly used + connect to outcome
-
-- Demographic breakdown -> age, racial distribution, gender and family involvement
-
-- Unmet needs -> number of patients who could not receive therapy due to scheduling conflicts or capacity
-
-## Linking Funding to Impact
-
-- Impact per Dollar: Answer question like "What does each $1 donated accomplish?"
-
-- Donor Location vs. Hospital Location -> heat map maybe 
-
-- Campaigns tied to programs?
-
+## 📬 Contact
+- Minh Le: le_m2@denison.edu
+- Uyen Nguyen: nguyen_u1@denison.edu
+- Viet Nguyen: nguyen_v5@denison.edu
+- Lewis Nguyen: nguyen_h10@denison.edu
