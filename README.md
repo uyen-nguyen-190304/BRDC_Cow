@@ -10,12 +10,14 @@ This project uses behavioral analytics and statistical modeling to help Sam’s 
 .
 ├── data/                                       # Cleaned and raw data files
 ├── presentations/                              # Project slides and graphics
-├── RFManalysis.ipynb                           # K-means clustering on RFM scores
-├── Time_Series_Survival_Analysis.ipynb         # Kaplan-Meier, Weibull AFT, STL, SARIMA models
-├── Unmet_Demand_Analysis.ipynb                 # OLS regression to identify funding gaps
-├── BRDC 2025 Executive Summary                 # Executive Summary
+├── summary/                                    # Executive Summary
+├── notebook/                                   # Jupyter Notebook for analysis
+│   ├── RFManalysis.ipynb                       # K-means clustering on RFM scores
+│   ├── Time_Series_Survival_Analysis.ipynb     # Kaplan-Meier, Weibull AFT, STL, SARIMA models
+│   ├── Unmet_Demand_Analysis.ipynb             # OLS regression to identify funding gaps
 ├── README.md                                   # Project summary and documentation
 └── .gitignore
+
 ```
 
 ## ⚙️ Methodology
@@ -54,7 +56,7 @@ This project uses behavioral analytics and statistical modeling to help Sam’s 
 
 - There are 12 statistical significant predictors (p < 0.05) for unmet needs in providing therapy programs across 8 hospitals.
 
-## ✨Reccomendations
+## ✨ Reccomendations
 - Star Donors: Executive-level, ongoing, personalized rapport to maintain engagement at a deep level with Sam’s Fans
 
 - Committed Contributors & Emerging Partners: Focus on community-building and a personalized approach within 9–10 months after donation. Allow donors to see the impact of their contributions!
@@ -62,6 +64,31 @@ This project uses behavioral analytics and statistical modeling to help Sam’s 
 - At-Risk Donors: Low-stake outreach within a short time span of within 3 months post-donation to transform At-Risk Donors into new Emerging Partners.
 
 - Program Investments: Allocate FY2025 budget to expand art/music therapy, scale group sessions, diversify inpatient services, and launch gender-inclusive outreach to address high-impact unmet needs.
+
+
+## 🛠 Setup & Installation
+
+To get started with this project, follow these steps:
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. **Create and activate a virtual environment (optional but recommended)**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate    # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install the required packages**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## 📚 References
 - [Sam’s Fans – Nonprofit Partner](https://www.samsfans.org/)
