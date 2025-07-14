@@ -15,6 +15,7 @@ This project uses behavioral analytics and statistical modeling to help Sam’s 
 │   ├── RFManalysis.ipynb                       # K-means clustering on RFM scores
 │   ├── Time_Series_Survival_Analysis.ipynb     # Kaplan-Meier, Weibull AFT, STL, SARIMA models
 │   ├── Unmet_Demand_Analysis.ipynb             # OLS regression to identify funding gaps
+├── requirements.txt                            # Python package requirements
 ├── README.md                                   # Project summary and documentation
 └── .gitignore
 
